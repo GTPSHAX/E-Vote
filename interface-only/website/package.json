@@ -1,0 +1,30 @@
+{
+  "name": "e-vote_interface-only",
+  "version": "1.0.0",
+  "description": "Hanya interface dari website E-Vote tanpa adanya sistem server-side maupun backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTPSHAX/E-Vote.git"
+  },
+  "keywords": [
+    "e-vote",
+    "vote",
+    "suara",
+    "pemungutan",
+    "suara",
+    "demokrasi"
+  ],
+  "author": "GROWPLUS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GTPSHAX/E-Vote/issues"
+  },
+  "homepage": "https://github.com/GTPSHAX/E-Vote#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

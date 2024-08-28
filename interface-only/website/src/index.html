@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="z-[2] relative">
+        <div class="p-[30px_15%]">
+            <div class="flex justify-start items-center gap-[5px]">
+                <img class="md:w-[40px] w-[30px]" src="./assets/logo-sekolah-1.1.png" alt="Logo Sekolah" id="logosekolah">
+                <p class="font-bold text-[20px] md:text-[25px] text-blue-950">SMK BHINA KARYA</p>
+            </div>
+        </div>
+    </header>
+    <main class="z-[2] relative p-[30px_15%] h-[75vh] flex justify-center items-center">
+        <div class="md:w-[100%] flex items-center overflow-hidden rounded-2xl bg-[#e4f2ff7c] backdrop-blur-md shadow-xl shadow-blue-200 box-border">
+            <div class="h-[350px] box-content hidden md:block w-[45%] bg-[url('./assets/foto-sekolah.jpg')] bg-center bg-cover"></div>
+            <div class="p-[10px_20px]">
+                <h1 class="font-extrabold text-blue-900 md:text-[25px] text-[20px]">E-Vote Pemilihan ketua dan wakil ketua OSIS 2024/2025</h1>
+                <p class="text-gray-600">Silahkan login dengan Nomor Induk Siswa Sekolah (NIS) sebelum melakukan voting! 
+                </p>
+                <form action="/login" method="post">
+                    <label for="numberInput" class="block text-gray-700 font-semibold mt-2">NIS:</label>
+                    <input type="text" id="numberInput" name="numberInput" inputmode="numeric" pattern="\d*" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan nomor" required>
+
+                    <!-- <label for="passwordInput" class="block text-gray-700 font-semibold mt-2">Password:</label>
+                    <div class="relative overflow-hidden border border-gray-300 rounded-md">
+                        <input type="password" id="passwordInput" name="passwordInput" class="w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 pr-10" placeholder="Masukkan password" required>
+                        <button type="button" class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-600 border-l-2" id="togglePassword">
+                            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 442.04 442.04" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M221.02,341.304c-49.708,0-103.206-19.44-154.71-56.22C27.808,257.59,4.044,230.351,3.051,229.203
+                                            c-4.068-4.697-4.068-11.669,0-16.367c0.993-1.146,24.756-28.387,63.259-55.881c51.505-36.777,105.003-56.219,154.71-56.219
+                                            c49.708,0,103.207,19.441,154.71,56.219c38.502,27.494,62.266,54.734,63.259,55.881c4.068,4.697,4.068,11.669,0,16.367
+                                            c-0.993,1.146-24.756,28.387-63.259,55.881C324.227,321.863,270.729,341.304,221.02,341.304z M29.638,221.021
+                                            c9.61,9.799,27.747,27.03,51.694,44.071c32.83,23.361,83.714,51.212,139.688,51.212s106.859-27.851,139.688-51.212
+                                            c23.944-17.038,42.082-34.271,51.694-44.071c-9.609-9.799-27.747-27.03-51.694-44.071
+                                            c-32.829-23.362-83.714-51.212-139.688-51.212s-106.858,27.85-139.688,51.212C57.388,193.988,39.25,211.219,29.638,221.021z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M221.02,298.521c-42.734,0-77.5-34.767-77.5-77.5c0-42.733,34.766-77.5,77.5-77.5c18.794,0,36.924,6.814,51.048,19.188
+                                            c5.193,4.549,5.715,12.446,1.166,17.639c-4.549,5.193-12.447,5.714-17.639,1.166c-9.564-8.379-21.844-12.993-34.576-12.993
+                                            c-28.949,0-52.5,23.552-52.5,52.5s23.551,52.5,52.5,52.5c28.95,0,52.5-23.552,52.5-52.5c0-6.903,5.597-12.5,12.5-12.5
+                                            s12.5,5.597,12.5,12.5C298.521,263.754,263.754,298.521,221.02,298.521z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M221.02,246.021c-13.785,0-25-11.215-25-25s11.215-25,25-25c13.786,0,25,11.215,25,25S234.806,246.021,221.02,246.021z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div> -->
+        
+                    <div>
+                        <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-5">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="z-[2] relative">
+        <div class="p-[10px_15vw] box-border">
+            <img src="./assets/logo-growplus.png" alt="Logo growplus" class="w-[110px] h-auto">
+        </div>
+    </footer>
+    <div class="bg absolute overflow-hidden h-screen w-screen top-0">
+        <div class="z-[1] h-screen bg-[#fefefea6] relative backdrop-blur-md"></div>
+        <div class="container z-0 h-screen">
+            <div class="partikel w-[20%] h-[20%] box-border bg-purple-400 absolute top-0 rounded-full shadow-[0_0_600px_300px_#c084fc] shadow-purple-400 animate-pulse-slow"></div>
+            <div class="partikel w-[25%] h-[25%] box-border bg-blue-400 bottom-0 right-0 absolute rounded-full shadow-[0_0_600px_300px_rgb(96,165,250)] shadow-blue-400 animate-pulse-slow"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
