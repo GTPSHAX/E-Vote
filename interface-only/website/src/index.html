@@ -6,9 +6,21 @@
     <title>E-Vote</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/logo-sekolah-1.1.png" type="image/x-icon">
-    <meta name="description" content="Website untuk melakukan voting secara online dan gratis dengan sistem login menggunakan Nomor Induk Sekolah (NIS) Dikembangkan oleh GROWPLUS Community">
+    <meta name="description" content="Website untuk melakukan voting secara online dan gratis dengan sistem login. Dikembangkan oleh GROWPLUS Community">
     <meta name="keywords" content="voting, vote, pemilihan suara, coblos, elektrik, elektrik vote, e-vote, growplus, growplus community">
     <meta name="author" content="GrowPlus Community">
+    <meta name="robots" content="noindex, nofollow">
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'U' || e.key === 'I' || e.key === 'J')) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </head>
 <body>
     <header class="z-[2] relative">
@@ -24,13 +36,13 @@
             <div class="h-[350px] box-content hidden md:block w-[45%] bg-[url('./assets/foto-sekolah.jpg')] bg-center bg-cover"></div>
             <div class="p-[10px_20px]">
                 <h1 class="font-extrabold text-blue-900 md:text-[25px] text-[20px]">E-Vote Pemilihan ketua dan wakil ketua OSIS 2024/2025</h1>
-                <p class="text-gray-600">Silahkan login dengan Nomor Induk Siswa Sekolah (NIS) sebelum melakukan voting! 
+                <p class="text-gray-600">Silahkan login dengan password yang tertera pada surat undangan sebelum melakukan voting! 
                 </p>
-                <form action="/login" method="post">
-                    <label for="numberInput" class="block text-gray-700 font-semibold mt-2">NIS:</label>
-                    <input type="text" id="numberInput" name="numberInput" inputmode="numeric" pattern="\d*" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan nomor" required>
+                <form action="./vote" method="post">
+                    <!-- <label for="numberInput" class="block text-gray-700 font-semibold mt-2">NIS:</label>
+                    <input type="text" id="numberInput" name="numberInput" inputmode="numeric" pattern="\d*" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan nomor" required> -->
 
-                    <!-- <label for="passwordInput" class="block text-gray-700 font-semibold mt-2">Password:</label>
+                    <label for="passwordInput" class="block text-gray-700 font-semibold mt-2">Password:</label>
                     <div class="relative overflow-hidden border border-gray-300 rounded-md">
                         <input type="password" id="passwordInput" name="passwordInput" class="w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 pr-10" placeholder="Masukkan password" required>
                         <button type="button" class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-600 border-l-2" id="togglePassword">
@@ -57,7 +69,7 @@
                                 </g>
                             </svg>
                         </button>
-                    </div> -->
+                    </div>
         
                     <div>
                         <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-5">Login</button>
