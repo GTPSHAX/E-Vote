@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Vote</title>
-    <link rel="stylesheet" href="./style.css">
+    <link href="./style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/logo-sekolah-1.1.png" type="image/x-icon">
     <meta name="description" content="Website untuk melakukan voting secara online dan gratis dengan sistem login. Dikembangkan oleh GROWPLUS Community">
     <meta name="keywords" content="voting, vote, pemilihan suara, coblos, elektrik, elektrik vote, e-vote, growplus, growplus community">
@@ -22,7 +22,8 @@
         });
     </script>
 </head>
-<body>
+<body class="bg-gray-100">
+
     <header class="z-[2] relative">
         <div class="p-[30px_15vw] flex flex-col md:flex-row md:justify-between md:items-center gap-6">
             <div class="flex justify-start items-center gap-[5px]">
@@ -31,43 +32,174 @@
             </div>
             <div class="bg-sky-100 p-[10px_20px] w-fit rounded-md">
                 <span class="flex items-center gap-2">
-                    <p class="font-semibold text-sky-900 text-lg">Peserta terverifikasi</p>
+                    <p class="font-semibold text-gray-900 text-lg">Peserta terverifikasi</p>
                     <img width="25" src="../assets/verify.png" alt="verify icon">
                 </span>
                 <p class="text-gray-500">Anda dapat melakukan voting sekarang</p>
             </div>
         </div>
     </header>
-    <main class="z-[2] relative p-[0_15vw]">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab excepturi nihil rerum deleniti. A sed perspiciatis omnis ipsum dolorum dicta maxime ullam aliquid dolorem delectus, repellat libero, officiis fuga architecto.
-        Voluptas, cum distinctio? Sapiente repudiandae quod iste fugiat totam ducimus consequuntur minus provident, et ab id voluptatem sequi officiis iusto quibusdam suscipit voluptatum delectus dolorum saepe accusamus debitis quis odit!
-        Quos voluptatum eos unde vitae? Quae cumque ex voluptatum non obcaecati earum expedita, quibusdam facere enim possimus veniam vel, esse molestias voluptatibus qui accusantium ratione iste dolorum dolore asperiores distinctio.
-        Sequi voluptates incidunt est illo suscipit aspernatur, facilis architecto beatae vel ad iure quisquam, quibusdam tempore eaque aliquam modi distinctio in natus minima sapiente magnam maxime. Distinctio facere repudiandae illo!
-        Cumque assumenda excepturi nisi repudiandae consectetur voluptatum qui quisquam voluptas. Reiciendis provident pariatur ab reprehenderit, atque quis perspiciatis at, error perferendis commodi harum ad impedit. Laudantium alias eos officiis eligendi!
-        Expedita laborum assumenda nobis ex officiis aspernatur, minus, libero tempora quis delectus incidunt hic quibusdam. Totam delectus, nisi saepe illum sit iste ipsa sequi expedita animi libero nostrum inventore quidem.
-        Magnam cum vero iste odio molestias quibusdam obcaecati vitae, nobis magni. Voluptate nihil, blanditiis error repellat obcaecati vero dolorum adipisci exercitationem, maiores sequi culpa laboriosam nemo! Deserunt ut obcaecati quod?
-        Ea nihil excepturi molestias repellat aspernatur! Reprehenderit, quasi. Minus, rem laboriosam. Qui delectus laboriosam odio unde officia? Ipsam, inventore necessitatibus reprehenderit debitis dolorem repellendus ratione accusamus harum molestiae, eligendi voluptate.
-        Culpa hic reprehenderit aut vel fuga, optio cupiditate. Tenetur et labore facilis nobis magni? Earum expedita, molestiae est repellat reprehenderit voluptatem similique saepe accusantium tempore sunt quidem at nulla assumenda!
-        Repudiandae facere quia ipsum ex, consequuntur odio magni illum animi distinctio cum consequatur laborum, deleniti quae placeat nihil, itaque obcaecati debitis at nulla quod? Earum vitae a inventore repudiandae natus!
+
+    <main class="z-[2] relative p-[0_15vw] space-y-20">
+        <section id="peraturan" class="">
+            <h1 class="font-bold text-3xl md:text-4xl text-blue-950">Peraturan</h1>
+            <div class="flex gap-5 flex-col md:flex-row mt-4">
+                <div class="w-full p-[10px_20px] shadow-[0_10px_10px_rgb(226,226,226)] border rounded-md">
+                    <h2 class="font-bold text-2xl md:text-3xl text-blue-900">Umum</h2>
+                    <ol class="list-decimal ml-5">
+                        <li>Peserta dan Petugas diharapkan saling <b>mejaga kerahasiaan</b> suara.</li>
+                        <li>Peserta dan Petugas <b>dilarang menimbulkan kegaduhan</b> di dalam ruangan.</li>
+                    </ol>
+                </div>
+                <div class="w-full p-[10px_20px] shadow-[0_10px_10px_rgb(226,226,226)] border rounded-md">
+                    <h2 class="font-bold text-2xl md:text-3xl text-blue-900">E-Vote</h2>
+                    <ol class="list-decimal ml-5">
+                        <li>Peserta dan Petugas <b>dilarang keras untuk memodifikasi atau menggunakan tool apapun</b> pada Website ini.</li>
+                        <li>Peserta diwajibkan <b>melapor</b> ke Petugas <b>jika terjadi kendala</b>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section id="calon" class="mt-16">
+            <h1 class="font-bold text-3xl md:text-4xl text-blue-950">Daftar Paslon</h1>
+            <div class="bg-sky-100 p-[10px_20px] w-fit rounded-md mt-4">
+                <span class="flex items-center gap-2">
+                    <img width="25" src="../assets/info.png" alt="info icon">
+                    <b class=" text-gray-900 text-lg">Cara melakukan vote:</b>
+                </span>
+                <ol class="list-decimal ml-5">
+                    <li>Membaca Visi, Misi, dan Harapan dari setiap Calon.</li>
+                    <li>Setelah itu, Peserta dapat memilih <b>salah satu</b> Calon.</li>
+                    <li>Peserta dapat memberikan pesan kepada Calon yang mereka pilih.</li>
+                    <li>Dan terakhir, Peserta dapat menekan tombol <i><b class="text-green-500">Vote</b></i> untuk mengirimkan data.</li>
+                </ol>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-5 justify-center w-full">
+                <div class="w-full md:w-[calc(50%-10px)] p-4 shadow-[0_10px_10px_rgb(226,226,226)] border rounded-xl flex flex-col gap-5">
+                    <center>
+                        <img class="rounded-full border-[10px] border-gray-300" src="../assets/fotk-calon1.png" alt="Foto calon 1" width="200">
+                        <h1 class="font-bold text-2xl md:text-3xl text-blue-900">Paslon 1</h1>
+                    </center>
+                    <div class="flex gap-5 justify-between flex-wrap md:flex-nowrap">
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div>
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Wakil Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Visi</center></h2>
+                        <p class="text-yellow-950 text-center"><b>Makan</b></p>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-blue-300 to-purple-300">
+                        <h2 class="font-bold text-purple-700 text-lg"><center>Misi</center></h2>
+                        <ol class="list-decimal text-purple-950 ml-[20px] font-semibold">
+                            <li>Makan</li>
+                            <li>Makan</li>
+                        </ol>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Harapan</center></h2>
+                        <p class="text-yellow-950 text-center"><b>MakanGratis</b></p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-10px)] p-4 shadow-[0_10px_10px_rgb(226,226,226)] border rounded-xl flex flex-col gap-5">
+                    <center>
+                        <img class="rounded-full border-[10px] border-gray-300" src="../assets/fotk-calon1.png" alt="Foto calon 1" width="200">
+                        <h1 class="font-bold text-2xl md:text-3xl text-blue-900">Paslon 1</h1>
+                    </center>
+                    <div class="flex gap-5 justify-between flex-wrap md:flex-nowrap">
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div>
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Wakil Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Visi</center></h2>
+                        <p class="text-yellow-950 text-center"><b>Makan</b></p>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-blue-300 to-purple-300">
+                        <h2 class="font-bold text-purple-700 text-lg"><center>Misi</center></h2>
+                        <ol class="list-decimal text-purple-950 ml-[20px] font-semibold">
+                            <li>Makan</li>
+                            <li>Makan</li>
+                        </ol>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Harapan</center></h2>
+                        <p class="text-yellow-950 text-center"><b>MakanGratis</b></p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[calc(100%-10px)] p-4 shadow-[0_10px_10px_rgb(226,226,226)] border rounded-xl flex flex-col gap-5">
+                    <div class="flex justify-center gap-5 items-center">
+                        <center>
+                            <img class="rounded-full border-[10px] border-gray-300" src="../assets/fotk-calon1.png" alt="Foto calon 1" width="200">
+                            <h1 class="font-bold text-2xl md:text-3xl text-blue-900">Paslon 1</h1>
+                        </center>
+                        <div class="flex gap-5 flex-col w-[65%]">
+                            <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center box-content">
+                                <p class="text-sm text-gray-400">Calon Ketua</p>
+                                <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                                <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                            </div>
+                            <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center box-content">
+                                <p class="text-sm text-gray-400">Calon Ketua</p>
+                                <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                                <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Visi</center></h2>
+                        <p class="text-yellow-950 text-center"><b>Makan</b></p>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-blue-300 to-purple-300">
+                        <h2 class="font-bold text-purple-700 text-lg"><center>Misi</center></h2>
+                        <ol class="list-decimal text-purple-950 ml-[20px] font-semibold">
+                            <li>Makan</li>
+                            <li>Makan</li>
+                        </ol>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Harapan</center></h2>
+                        <p class="text-yellow-950 text-center"><b>MakanGratis</b></p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="vote" class="h-screen flex items-center justify-center">
+            <h1 class="font-bold text-3xl md:text-5xl text-blue-950">Vote</h1>
+        </section>
     </main>
-    <footer class="z-[3] fixed w-screen bottom-0">
+
+    <footer class="z-[3] fixed w-full bottom-0">
         <div class="z-[2] p-[30px_15vw] relative">
             <div class="w-full bg-gray-50 p-[10px_20px] rounded-full shadow-lg shadow-gray-300 flex justify-around items-center gap-3 text-gray-500 font-semibold">
-                <p>Peraturan</p>
-                <div class="h-1 w-full bg-gray-300 rounded-full translate-y-[3px]"></div>
-                <p>Vote</p>
-                <div class="h-1 w-full bg-gray-300 rounded-full translate-y-[3px]"></div>
-                <p>Selesai</p>
+                <a href="#peraturan" id="nav-peraturan" class="text-blue-600">Peraturan</a>
+                <div class="h-1 w-full bg-gray-300 rounded-full"></div>
+                <a href="#calon" id="nav-calon">Paslon</a>
+                <div class="h-1 w-full bg-gray-300 rounded-full"></div>
+                <a href="#vote" id="nav-vote">Vote</div>
             </div>
         </div>
         <div class="h-full w-full bg-gradient-to-t from-[#ffffff] absolute bottom-0"></div>
     </footer>
-    <div class="bg fixed overflow-hidden h-screen w-screen top-0">
-        <div class="z-[1] h-[110vh] bg-[#fefefea6] relative backdrop-blur-md"></div>
-        <div class="container z-0 h-screen">
-            <div class="partikel w-[20%] h-[20%] box-border bg-purple-400 absolute top-0 rounded-full shadow-[0_0_600px_300px_#c084fc] shadow-purple-400 animate-pulse-slow"></div>
-            <div class="partikel w-[25%] h-[25%] box-border bg-blue-400 bottom-0 right-0 absolute rounded-full shadow-[0_0_600px_300px_rgb(96,165,250)] shadow-blue-400 animate-pulse-slow"></div>
-        </div>
-    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
