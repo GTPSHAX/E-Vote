@@ -1,3 +1,13 @@
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+// });
+
+// document.addEventListener('keydown', function(e) {
+//     if (e.ctrlKey && (e.key === 'U' || e.key === 'I' || e.key === 'J')) {
+//         e.preventDefault();
+//     }
+// });
+
 const sections = document.querySelectorAll('section');
 const navLinks = {
     peraturan: document.getElementById('nav-peraturan'),
@@ -32,3 +42,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function limitSelection(selectedCheckbox) {
+    const checkboxes = document.querySelectorAll('input[name="image"]');
+    checkboxes.forEach((box) => {
+        if (box !== selectedCheckbox) {
+            box.checked = false;
+        }
+    });
+}
