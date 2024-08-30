@@ -51,3 +51,22 @@ function limitSelection(selectedCheckbox) {
         }
     });
 }
+
+let countdown = 30;
+const button = document.getElementById('voteButton');
+const interval = setInterval(() => {
+    countdown--;
+    button.textContent = `VOTE (${countdown} detik)`;
+    if (countdown <= 0) {
+        clearInterval(interval);
+        button.classList.remove('bg-red-500');
+        button.classList.add('bg-green-500', 'hover:bg-green-600');
+        button.textContent = 'VOTE';
+        button.disabled = false;
+        button.addEventListener('click', () => {
+            document.getElementById('voteForm').submit();
+        });
+    }
+}, 1000);
+
+button.disabled = true;

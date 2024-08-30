@@ -176,8 +176,8 @@
             <div class="bg-gray-100 flex items-center justify-center mt-4">
                 <div class="bg-white p-8 rounded-xl shadow-lg w-full">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Pilih Paslon</h2>
-                    <form id="voteForm" action="#" method="POST" onsubmit="return checkSelection(event)">
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                    <form id="voteForm" action="#" method="POST">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                         <label class="relative cursor-pointer">
                             <input type="checkbox" name="image" value="1" class="sr-only peer" onchange="limitSelection(this)">
                             <img src="https://via.placeholder.com/150" alt="Gambar 1" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
@@ -191,11 +191,11 @@
                             <img src="https://via.placeholder.com/150" alt="Gambar 3" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
                         </label>
                     </div>
-                    <button type="submit" class="w-full bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300">VOTE</button>
+                    <button id="voteButton" type="button" class="w-full bg-red-500 text-white font-bold py-3 px-4 rounded-lg transition duration-300">VOTE (20 detik)</button>
                     </form>
                 </div>
             </div>
-          </section>
+        </section>
     </main>
 
     <footer class="z-[3] fixed w-full bottom-0">
