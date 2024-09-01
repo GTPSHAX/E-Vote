@@ -1,12 +1,12 @@
-// document.addEventListener('contextmenu', function(e) {
-//     e.preventDefault();
-// });
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
 
-// document.addEventListener('keydown', function(e) {
-//     if (e.ctrlKey && (e.key === 'U' || e.key === 'I' || e.key === 'J')) {
-//         e.preventDefault();
-//     }
-// });
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'U' || e.key === 'I' || e.key === 'J')) {
+        e.preventDefault();
+    }
+});
 
 const sections = document.querySelectorAll('section');
 const navLinks = {
@@ -75,6 +75,7 @@ const interval = setInterval(() => {
         button.classList.remove('bg-red-500');
         button.classList.add('bg-green-500', 'hover:bg-green-600');
         button.textContent = 'VOTE';
+        // button.disabled = false;
         // button.addEventListener('click', () => {
         //     document.getElementById('voteForm').submit();
         // });
