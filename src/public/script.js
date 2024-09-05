@@ -43,6 +43,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+let voted = 0;
+
 function limitSelection(selectedCheckbox) {
     const checkboxes = document.querySelectorAll('input[name="paslon"]');
     let anyChecked = false;
@@ -56,7 +58,7 @@ function limitSelection(selectedCheckbox) {
     });
     
     const voteButton = document.getElementById('voteButton');
-    if (anyChecked) {
+    if (anyChecked && !voteButton.disabled && !voted) {
         voteButton.disabled = false;
         voteButton.classList.remove('opacity-50', 'cursor-not-allowed');
     } else {
@@ -65,17 +67,30 @@ function limitSelection(selectedCheckbox) {
     }
 }
 
+function vote(btn) {
+    if (!btn.disabled) {
+        btn.disabled = true;
+        voted = 1;
+        document.getElementById('voteForm').submit();
+        btn.innerText = "Mohon Bersabar...";
+        setTimeout(()=>{
+            alert("Server sedang mengalami gangguan. Mohon coba lagi...");
+            location.reload();
+        }, 30000)
+    }
+}
+
 let countdown = 5;
 const button = document.getElementById('voteButton');
 const interval = setInterval(() => {
     countdown--;
-    button.textContent = `VOTE (${countdown} detik)`;
+    button.textContent = `VOTE [${countdown} detik]`;
     if (countdown <= 0) {
         clearInterval(interval);
         button.classList.remove('bg-red-500');
         button.classList.add('bg-green-500', 'hover:bg-green-600');
         button.textContent = 'VOTE';
-        // button.disabled = false;
+        button.disabled = false;
         // button.addEventListener('click', () => {
         //     document.getElementById('voteForm').submit();
         // });
