@@ -80,7 +80,7 @@ function vote(btn) {
     }
 }
 
-let countdown = 5;
+let countdown = 9;
 const button = document.getElementById('voteButton');
 const interval = setInterval(() => {
     countdown--;
