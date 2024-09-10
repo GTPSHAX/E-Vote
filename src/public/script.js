@@ -48,7 +48,12 @@ let voted = 0;
 function limitSelection(selectedCheckbox) {
     const checkboxes = document.querySelectorAll('input[name="paslon"]');
     let anyChecked = false;
+    const voteButton = document.getElementById('voteButton');
     checkboxes.forEach((box) => {
+        if (voteButton.disabled) {
+            box.checked = false;
+            return;
+        }
         if (box !== selectedCheckbox) {
             box.checked = false;
         }
@@ -56,8 +61,6 @@ function limitSelection(selectedCheckbox) {
             anyChecked = true;
         }
     });
-    
-    const voteButton = document.getElementById('voteButton');
     if (anyChecked && !voteButton.disabled && !voted) {
         voteButton.disabled = false;
         voteButton.classList.remove('opacity-50', 'cursor-not-allowed');
@@ -82,6 +85,7 @@ function vote(btn) {
 
 let countdown = 9;
 const button = document.getElementById('voteButton');
+
 const interval = setInterval(() => {
     countdown--;
     button.textContent = `VOTE [${countdown} detik]`;
