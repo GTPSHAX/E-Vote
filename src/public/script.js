@@ -44,24 +44,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 let voted = 0;
+let countdown = 10;
 
 function limitSelection(selectedCheckbox) {
     const checkboxes = document.querySelectorAll('input[name="paslon"]');
-    let anyChecked = false;
     const voteButton = document.getElementById('voteButton');
+    let anyChecked = false;
     checkboxes.forEach((box) => {
-        if (voteButton.disabled) {
-            box.checked = false;
-            return;
-        }
-        if (box !== selectedCheckbox) {
+        if (box != selectedCheckbox) {
             box.checked = false;
         }
         if (box.checked) {
             anyChecked = true;
         }
     });
-    if (anyChecked && !voteButton.disabled && !voted) {
+    if (anyChecked && !countdown) {
         voteButton.disabled = false;
         voteButton.classList.remove('opacity-50', 'cursor-not-allowed');
     } else {
@@ -71,7 +68,7 @@ function limitSelection(selectedCheckbox) {
 }
 
 function vote(btn) {
-    if (!btn.disabled) {
+    if (!btn.disabled && !voted) {
         btn.disabled = true;
         voted = 1;
         document.getElementById('voteForm').submit();
@@ -82,8 +79,6 @@ function vote(btn) {
         }, 30000)
     }
 }
-
-let countdown = 9;
 const button = document.getElementById('voteButton');
 
 const interval = setInterval(() => {
@@ -94,10 +89,6 @@ const interval = setInterval(() => {
         button.classList.remove('bg-red-500');
         button.classList.add('bg-green-500', 'hover:bg-green-600');
         button.textContent = 'VOTE';
-        button.disabled = false;
-        // button.addEventListener('click', () => {
-        //     document.getElementById('voteForm').submit();
-        // });
     }
 }, 1000);
 
