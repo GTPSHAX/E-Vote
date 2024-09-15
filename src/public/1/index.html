@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Vote</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/logo-sekolah-1.1.png" type="image/x-icon">
+    <meta name="description" content="Website untuk melakukan voting secara online dan gratis dengan sistem login. Dikembangkan oleh GROWPLUS Community">
+    <meta name="keywords" content="voting, vote, pemilihan suara, coblos, elektrik, elektrik vote, e-vote, growplus, growplus community">
+    <meta name="author" content="GrowPlus Community">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body class="bg-gray-100">
+
+    <header class="z-[2] relative">
+        <div class="p-[30px_15vw] flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+            <div class="flex justify-start items-center gap-[5px]">
+                <img class="md:w-[40px] w-[30px]" src="../assets/logo-sekolah-1.1.png" alt="Logo Sekolah" id="logosekolah">
+                <p class="font-bold text-[20px] md:text-[25px] text-blue-950">SMK BHINA KARYA</p>
+            </div>
+            <div class="bg-sky-100 p-[10px_20px] w-fit rounded-md">
+                <span class="flex items-center gap-2">
+                    <p class="font-semibold text-gray-900 text-lg">Peserta terverifikasi</p>
+                    <img width="25" src="../assets/verify.png" alt="verify icon">
+                </span>
+                <p class="text-gray-500">Anda dapat melakukan voting sekarang</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="z-[2] relative p-[0_15vw] space-y-20">
+        <section id="peraturan" class="">
+            <h1 class="font-bold text-3xl md:text-4xl text-blue-950">Peraturan</h1>
+            <div class="flex gap-5 flex-col md:flex-row mt-4">
+                <div class="w-full p-[10px_20px] shadow-[0_10px_10px_rgb(226,226,226)] border rounded-md">
+                    <h2 class="font-bold text-2xl md:text-3xl text-blue-900">Umum</h2>
+                    <ol class="list-decimal ml-5">
+                        <li>Peserta dan Petugas diharapkan saling <b>mejaga kerahasiaan</b> suara.</li>
+                        <li>Peserta dan Petugas <b>dilarang menimbulkan kegaduhan</b> di dalam ruangan.</li>
+                    </ol>
+                </div>
+                <div class="w-full p-[10px_20px] shadow-[0_10px_10px_rgb(226,226,226)] border rounded-md">
+                    <h2 class="font-bold text-2xl md:text-3xl text-blue-900">E-Vote</h2>
+                    <ol class="list-decimal ml-5">
+                        <li>Peserta dan Petugas <b>dilarang keras untuk memodifikasi atau menggunakan tool apapun</b> pada Website ini.</li>
+                        <li>Peserta diwajibkan <b>melapor</b> ke Petugas <b>jika terjadi kendala</b>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section id="calon" class="mt-16">
+            <h1 class="font-bold text-3xl md:text-4xl text-blue-950">Daftar Calon</h1>
+            <div class="bg-sky-100 p-[10px_20px] w-fit rounded-md mt-4">
+                <span class="flex items-center gap-2">
+                    <img width="25" src="../assets/info.png" alt="info icon">
+                    <b class=" text-gray-900 text-lg">Cara melakukan vote:</b>
+                </span>
+                <ol class="list-decimal ml-5">
+                    <li>Membaca Visi, Misi, dan Harapan dari setiap Calon.</li>
+                    <li>Setelah itu, Peserta dapat memilih <b>salah satu</b> Calon.</li>
+                    <li>Peserta dapat memberikan pesan kepada Calon yang mereka pilih.</li>
+                    <li>Dan terakhir, Peserta dapat menekan tombol <i><b class="text-green-500">Vote</b></i> untuk mengirimkan data.</li>
+                </ol>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-5 justify-center w-full">
+                <div class="w-full md:w-[calc(50%-10px)] p-4 shadow-[0_10px_10px_rgb(226,226,226)] border rounded-xl flex flex-col gap-5">
+                    <center>
+                        <img class="rounded-full border-[10px] border-gray-300" src="../assets/foto-calon1.png" alt="Foto calon 1" width="200">
+                        <h1 class="font-bold text-2xl md:text-3xl text-blue-900">Calon 1</h1>
+                    </center>
+                    <div class="flex gap-5 justify-between flex-wrap md:flex-nowrap">
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">FIKRI FIRMANSYAH</p>
+                            <p class="text-lg font-semibold text-gray-600">XI PPLG 2</p>
+                        </div>
+                        <!-- <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Wakil Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div> -->
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Visi</center></h2>
+                        <p class="text-yellow-950 text-center"><b>Membentuk osis smk bhina karya karanganyar sebagai organisasi  yang berakhlak mulia, solid, disiplin, berprestasi, ramah, beretika dan bertanggung jawab.</b></p>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-blue-300 to-purple-300">
+                        <h2 class="font-bold text-purple-700 text-lg"><center>Misi</center></h2>
+                        <ol class="list-decimal text-purple-950 ml-[20px] font-semibold">
+                            <li>Membentuk osis smk bhina karya karanganyar sebagai organisasi  yang berakhlak mulia, solid, disiplin, berprestasi, ramah, beretika dan bertanggung jawab.</li>
+                            <li>Menjalin hubungan baik antar organisasi maupun dengan seluruh warga sekolah.</li>
+                            <li>Meningkatkan dan melanjutkan program kerja osis 1 periode yang lalu. Baik yang sudah terlaksana maupun yang belum terlaksana.</li>
+                            <li>Menjadikan osis smk bhina karya kra sebagai wadah untuk menyalurkan minat dan bakat.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-10px)] p-4 shadow-[0_10px_10px_rgb(226,226,226)] border rounded-xl flex flex-col gap-5">
+                    <center>
+                        <img class="rounded-full border-[10px] border-gray-300" src="../assets/foto-calon2.png" alt="Foto calon 1" width="200">
+                        <h1 class="font-bold text-2xl md:text-3xl text-blue-900">Calon 2</h1>
+                    </center>
+                    <div class="flex gap-5 justify-between flex-wrap md:flex-nowrap">
+                        <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">RADITYA BAGUS VERLANDO</p>
+                            <p class="text-lg font-semibold text-gray-600">X TKR 1</p>
+                        </div>
+                        <!-- <div class="bg-gray-300 p-[10px_20px] rounded-lg text-center w-full">
+                            <p class="text-sm text-gray-400">Calon Wakil Ketua</p>
+                            <p class="text-lg font-semibold text-gray-800">Andika Putra</p>
+                            <p class="text-lg font-semibold text-gray-600">XI RPL 2</p>
+                        </div> -->
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Visi</center></h2>
+                        <p class="text-yellow-950 text-center"><b>Terwujudnya sekolah yang unggul, nyaman, aman, sejahtera dan berakhlak mulia.</b></p>
+                    </div>
+                    <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-blue-300 to-purple-300">
+                        <h2 class="font-bold text-purple-700 text-lg"><center>Misi</center></h2>
+                        <ol class="list-decimal text-purple-950 ml-[20px] font-semibold">
+                            <li>Mengadakan kegiatan-kegiatan sosial dan keagamaan yang produktif.</li>
+                            <li>Mengaktifkan program ekstrakulikuler yang ada disekolah dan terlibat aktif untuk membangun kepengurusan yang harmonis.</li>
+                            <li>Mempererat kekeluargaan antara seluruh anggota sekolah.</li>
+                            <li>Meningkatkan dan menjaga mutu kerja OSIS yang berkualitas.</li>
+                            <li>Menjadikan siswa aktif, kreatif, berprestasi, dan menjunjung tinggi ketakwaan kepada Tuhan Yang Maha Esa.</li>
+                        </ol>
+                    </div>
+                    <!-- <div class="p-[10px_20px] rounded-lg bg-gradient-to-tr from-red-300 to-yellow-300">
+                        <h2 class="font-bold text-yellow-700 text-lg"><center>Harapan</center></h2>
+                        <p class="text-yellow-950 text-center"><b>MakanGratis</b></p>
+                    </div> -->
+                </div>
+
+            </div>
+            
+        </section>
+        <section id="vote" class="pb-20">
+            <h1 class="font-bold text-3xl md:text-4xl text-blue-950">Vote</h1>
+            <div class="bg-gray-100 flex items-center justify-center mt-4">
+                <div class="bg-white p-8 rounded-xl shadow-lg w-full">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Pilih Calon</h2>
+                    <form id="voteForm" action="./1/vote.php" method="POST">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 justify-center">
+                            <label class="relative cursor-pointer">
+                                <input type="checkbox" name="paslon" value="1" class="sr-only peer" onchange="limitSelection(this)">
+                                <img src="../assets/foto-calon1.png" alt="Gambar 1" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="checkbox" name="paslon" value="2" class="sr-only peer" onchange="limitSelection(this)">
+                                <img src="../assets/foto-calon2.png" alt="Gambar 2" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
+                            </label>
+                            <!-- <label class="relative cursor-pointer">
+                                <input type="checkbox" name="image" value="3" class="sr-only peer" onchange="limitSelection(this)">
+                                <img src="https://via.placeholder.com/150" alt="Gambar 3" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
+                            </label> -->
+                        </div>
+                        <button id="voteButton" type="submit" class="w-full bg-red-500 text-white font-bold py-3 px-4 rounded-lg transition duration-300 opacity-50 cursor-not-allowed" disabled onclick="vote(this)">
+                            VOTE [10 detik]
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="z-[3] fixed w-full bottom-0">
+        <div class="z-[2] p-[30px_15vw] relative">
+            <div class="w-full bg-gray-50 p-[10px_20px] rounded-full shadow-lg shadow-gray-300 flex justify-around items-center gap-3 text-gray-500 font-semibold">
+                <a href="#peraturan" id="nav-peraturan" class="text-blue-600">Peraturan</a>
+                <div class="h-1 w-full bg-gray-300 rounded-full"></div>
+                <a href="#calon" id="nav-calon">Calon</a>
+                <div class="h-1 w-full bg-gray-300 rounded-full"></div>
+                <a href="#vote" id="nav-vote">Vote</div>
+            </div>
+        </div>
+        <div class="h-full w-full bg-gradient-to-t from-[#ffffff] absolute bottom-0"></div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

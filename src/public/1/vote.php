@@ -1,5 +1,5 @@
 <?php
-$file = '../database/hasil_votes.json';
+$file = '../../database/hasil_votes.json';
 
 if (file_exists($file)) {
     $data = json_decode(file_get_contents($file), true);

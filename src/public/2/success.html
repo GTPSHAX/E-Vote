@@ -1,0 +1,24 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Sukses</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <audio id="myAudio" src="../assets/audio/bilik-2.mp3" style="opacity: 0; position: absolute;"></audio>
+    <div class="text-center">
+        <h1 class="text-3xl font-bold text-green-600">Terima kasih telah melakukan voting!</h1>
+        <p class="text-gray-700">Suara Anda telah tercatat.</p>
+        <a href="./" class="text-blue-500 underline">Kembali ke halaman utama</a>
+    </div>
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("myAudio");
+            audio.play().catch(error => {
+                console.log("Autoplay gagal: ", error);
+            });
+        };
+    </script>
+</body>
+</html>
