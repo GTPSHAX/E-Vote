@@ -141,8 +141,8 @@
             <div class="bg-gray-100 flex items-center justify-center mt-4">
                 <div class="bg-white p-8 rounded-xl shadow-lg w-full">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Pilih Calon</h2>
-                    <form id="voteForm" action="./1/vote.php" method="POST">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 justify-center">
+                    <form id="voteForm" action="vote.php" method="POST">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 justify-center  id="vote-box"">
                             <label class="relative cursor-pointer">
                                 <input type="checkbox" name="paslon" value="1" class="sr-only peer" onchange="limitSelection(this)">
                                 <img src="../assets/foto-calon1.png" alt="Gambar 1" class="w-full h-auto rounded-lg border-4 border-transparent peer-checked:border-yellow-500">
